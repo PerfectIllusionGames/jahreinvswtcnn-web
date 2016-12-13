@@ -19,7 +19,6 @@ app.get('/', function(request, response) {
 
 io.on('connection', function(socket){
   console.log('a user connected');
-  alert("a user connected");
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
